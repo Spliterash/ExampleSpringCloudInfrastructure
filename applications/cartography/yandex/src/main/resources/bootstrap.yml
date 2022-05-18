@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: cartography-yandex
+  cloud:
+    config:
+      uri: http://localhost:1000
+      fail-fast: true

@@ -1,0 +1,11 @@
+rootProject.name = 'better_infrastructure'
+
+include(
+        "applications:main",
+        "applications:services:configuration",
+        "applications:services:eureka",
+        "applications:cartography:yandex",
+        "applications:cartography:dadata",
+
+        "cartography-sdk",
+)

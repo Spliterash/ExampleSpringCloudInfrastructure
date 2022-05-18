@@ -1,0 +1,21 @@
+# Файл в котором настройки для всех
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+
+feign:
+  # Ванильный java клиент не даёт тело запроса, при отличном от 200 ответа
+  okhttp:
+    enabled: true
+  # Позволяет обновлять значение у name в feign на лету, при изменении конфигурации
+  client:
+    refresh-enabled: true
+
+# То ради чего всё это было
+# Какой микросервис использовать фейгну
+services:
+  cartography: cartography-dadata

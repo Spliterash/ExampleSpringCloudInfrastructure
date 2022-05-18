@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: cartography-dadata
+  cloud:
+    config:
+      uri: http://localhost:1000
+      fail-fast: true
+eureka:
+  client:
+    eureka-server-port:  1001

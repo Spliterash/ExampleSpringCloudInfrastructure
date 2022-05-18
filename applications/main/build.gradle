@@ -1,0 +1,8 @@
+bootJar {
+    //noinspection GroovyAccessibility
+    mainClass = "ru.spliterash.sushi.application.TestApplication"
+}
+
+dependencies {
+    api project(":cartography-sdk")
+}

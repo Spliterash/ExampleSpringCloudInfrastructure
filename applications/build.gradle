@@ -1,0 +1,23 @@
+//mainClassName = "ru.spliterash.sushi.application.TestApplication"
+
+subprojects {
+    apply plugin: "org.springframework.boot"
+}
+
+// У всех проектов есть клиент для подключения к конфигурации (кроме самой конфигурации что логично)
+configure(subprojects - project(":applications:services:configuration")) {
+    dependencies {
+        implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+        implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    }
+}
+
+// У всех проектов кроме сервисов спринга есть eureka клиент для подключения к service discovery
+configure(subprojects - project(":applications:services").allprojects) {
+    dependencies {
+        implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    }
+}
+
+jar.enabled = false
+build.enabled = false

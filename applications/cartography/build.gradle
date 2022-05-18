@@ -1,0 +1,12 @@
+subprojects {
+    dependencies {
+        api project(":cartography-sdk")
+        api "org.springframework.boot:spring-boot-starter-web"
+    }
+}
+
+
+jar.enabled = false
+build.enabled = false
+bootJar.enabled = false
+bootJarMainClassName.enabled = false
