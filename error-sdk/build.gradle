@@ -1,0 +1,8 @@
+jar.enabled = false
+build.enabled = false
+
+configure(subprojects - project(":error-sdk:domain")) {
+    dependencies {
+        api project(":error-sdk:domain")
+    }
+}

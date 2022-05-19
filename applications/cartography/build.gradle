@@ -1,6 +1,6 @@
 subprojects {
     dependencies {
-        api project(":cartography-sdk")
+        api project(":cartography-sdk:controller")
         api "org.springframework.boot:spring-boot-starter-web"
     }
 }

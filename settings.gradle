@@ -7,5 +7,13 @@ include(
         "applications:cartography:yandex",
         "applications:cartography:dadata",
 
-        "cartography-sdk",
+        "error-sdk:domain",
+        "error-sdk:resource",
+        "error-sdk:handler",
+        "error-sdk:client",
+
+        "cartography-sdk:domain",
+        "cartography-sdk:controller",
+        "cartography-sdk:client",
+        "cartography-sdk:resource",
 )

@@ -9,6 +9,8 @@ configure(subprojects - project(":applications:services:configuration")) {
     dependencies {
         implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
         implementation 'org.springframework.cloud:spring-cloud-starter-config'
+
+        api project(":error-sdk:handler")
     }
 }
 

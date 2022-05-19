@@ -4,5 +4,5 @@ bootJar {
 }
 
 dependencies {
-    api project(":cartography-sdk")
+    api project(":cartography-sdk:client")
 }

@@ -1,0 +1,8 @@
+jar.enabled = false
+build.enabled = false
+
+configure(subprojects - project(":cartography-sdk:domain")) {
+    dependencies {
+        api project(":cartography-sdk:domain")
+    }
+}

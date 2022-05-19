@@ -1,0 +1,5 @@
+dependencies {
+    api project(":error-sdk:resource")
+    implementation 'commons-io:commons-io'
+
+}
