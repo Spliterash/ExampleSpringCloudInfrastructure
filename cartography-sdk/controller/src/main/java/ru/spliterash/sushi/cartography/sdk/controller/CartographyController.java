@@ -2,8 +2,8 @@ package ru.spliterash.sushi.cartography.sdk.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;
-import ru.spliterash.sushi.cartography.sdk.resource.CartographyResource;
 import ru.spliterash.sushi.cartography.sdk.domain.CartographyGateway;
+import ru.spliterash.sushi.cartography.sdk.resource.CartographyResource;
 import ru.spliterash.sushi.cartography.sdk.resource.mapper.CartographyApiMapper;
 import ru.spliterash.sushi.cartography.sdk.resource.response.SuggestResponse;
 

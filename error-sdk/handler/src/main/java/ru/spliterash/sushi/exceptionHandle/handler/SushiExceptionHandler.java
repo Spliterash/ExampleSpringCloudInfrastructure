@@ -8,8 +8,8 @@ import ru.spliterash.sushi.exceptionHandle.domain.SushiDomainException;
 import ru.spliterash.sushi.exceptionHandle.resource.SushiExceptionResponse;
 import ru.spliterash.sushi.exceptionHandle.resource.SushiExceptionService;
 
-@RestControllerAdvice
 @RequiredArgsConstructor
+@RestControllerAdvice
 public class SushiExceptionHandler {
     private final SushiExceptionService sushiExceptionService;
 

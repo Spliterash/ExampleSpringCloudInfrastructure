@@ -1,6 +1,6 @@
 package ru.spliterash.sushi.cartography.sdk.resource.init;
 
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.TYPE, ElementType.ANNOTATION_TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@ComponentScan("ru.spliterash.sushi.cartography.sdk.resource")
+@Import(CartographyExceptionHandleConfiguration.class)
 public @interface EnableCartographyExceptionHandle {
 }

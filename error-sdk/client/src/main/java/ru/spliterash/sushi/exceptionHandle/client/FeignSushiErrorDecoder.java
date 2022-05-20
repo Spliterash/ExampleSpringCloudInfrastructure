@@ -6,11 +6,9 @@ import feign.codec.ErrorDecoder;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.apache.commons.io.IOUtils;
-import org.springframework.stereotype.Component;
 import ru.spliterash.sushi.exceptionHandle.resource.SushiExceptionResponse;
 import ru.spliterash.sushi.exceptionHandle.resource.SushiExceptionService;
 
-@Component
 @RequiredArgsConstructor
 public class FeignSushiErrorDecoder implements ErrorDecoder {
     private final SushiExceptionService exceptionService;
